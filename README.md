@@ -2,6 +2,8 @@
 
 The personal portfolio of Soham Deshmukh, built for the AWS portfolio hackathon and hosted on AWS Amplify Hosting.
 
+**Live site:** https://main.d6ioabaem3m4l.amplifyapp.com/
+
 It looks like a calm portfolio, and it behaves like a production system. Flip the guarded **Chaos Test** switch in the hero and the site has a simulated outage. You get paged, fix three incidents, and bring the page back.
 
 ## The three incidents
