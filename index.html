@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soham Deshmukh | Software, Cloud and Data Engineering</title>
+  <meta name="description" content="Soham Deshmukh is a final-year B.Tech IT student and 3x AWS Certified builder. This portfolio runs like a production system, and you can break it.">
+  <meta name="theme-color" content="#F3EFE6">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Soham Deshmukh | This portfolio is in production">
+  <meta property="og:description" content="3x AWS Certified builder. Flip the chaos switch, take the page, and bring the site back.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Caveat:wght@600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="uptime" aria-hidden="true"><span id="uptimeFill"></span></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#top" aria-label="Soham Deshmukh, back to top">SD<span>.</span></a>
+      <p class="status" id="status"><span class="status-dot" aria-hidden="true"></span><span id="statusText">All systems operational</span></p>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">Menu</button>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-break js-only" href="#top" id="navBreak">Break it</a>
+        <button class="theme-toggle" id="themeToggle" hidden>Night Shift</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroName">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Kopargaon, Maharashtra <span aria-hidden="true">/</span> Class of 2027</p>
+          <h1 id="heroName" class="hero-name"><span data-letters>Soham</span> <span data-letters>Deshmukh</span></h1>
+          <p class="hero-lead wobble">I build cloud systems, and I plan for the day they break.</p>
+          <p class="hero-sub">Final-year B.Tech IT student. 3x AWS Certified. Software, Cloud and Data Engineering.</p>
+          <div class="hero-actions wobble">
+            <a class="btn btn-primary" href="#projects"><span>View Projects</span></a>
+            <a class="btn" id="resumeBtn" href="https://drive.google.com/file/d/1Fx3tiGCzeJYhzYitSKy2DqIrS4_0Vk2F/view?usp=sharing" target="_blank" rel="noopener noreferrer"><span>Resume</span></a>
+          </div>
+
+          <div class="chaos js-only" id="chaos">
+            <div class="chaos-plate">
+              <button class="chaos-switch" id="chaosSwitch" type="button" data-step="closed" aria-label="Chaos test. Lift the safety cover.">
+                <span class="chaos-well" aria-hidden="true"><span class="chaos-lever"></span></span>
+                <span class="chaos-cover" aria-hidden="true"></span>
+              </button>
+              <div class="chaos-text">
+                <strong>CHAOS TEST</strong>
+                <span id="chaosStep">Lift the cover, then flip the switch.</span>
+              </div>
+            </div>
+            <p class="chaos-note" id="chaosNote">Don't press this. I've built for it.</p>
+          </div>
+        </div>
+
+        <figure class="hero-graphic crop wobble" id="heroGraphic">
+          <canvas id="net" aria-hidden="true"></canvas>
+          <figcaption>fig. 01: this page, as a system</figcaption>
+        </figure>
+      </div>
+
+      <div class="wrap">
+        <dl class="stats">
+          <div><dt>AWS certifications</dt><dd>3x</dd></div>
+          <div><dt>Students mentored</dt><dd>1000+</dd></div>
+          <div><dt>LeetCode problems</dt><dd>300+</dd></div>
+          <div><dt>CGPA</dt><dd>8.24</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="num">01</span> runbook</p>
+          <h2 id="aboutTitle">About Me</h2>
+        </header>
+        <div class="about-grid">
+          <figure class="portrait crop reveal tilt-2">
+            <img src="assets/soham-deshmukh.webp" width="720" height="720" alt="Portrait of Soham Deshmukh wearing glasses, a dark blazer and a red tie" loading="lazy">
+          </figure>
+          <div class="about-copy reveal">
+            <p class="big">I started out solving algorithm problems. Now I design and ship systems on the cloud, and I care about what happens when they fail.</p>
+            <p>I'm a final-year B.Tech IT student at Sanjivani College of Engineering, with a foundation in data structures, algorithms and object-oriented programming in Java, C++ and Python. From there I moved into full-stack work, from Spring Boot backends to React and Next.js frontends, and now I'm going deep on cloud computing, DevOps and generative AI.</p>
+            <p>During my internship at Celebal Technologies I worked on data-processing workflows with Python, SQL, Azure Databricks, PySpark, Delta Lake and Parquet on real datasets. Outside coursework I build things like <a href="#projects">LeakSpot</a> and <a href="https://github.com/THE-S0HAM/ocloud" target="_blank" rel="noopener noreferrer">oCloud</a>, a Python library for working with AWS, Azure and Google Cloud through one interface.</p>
+            <p>As a Diamond Level AWS Cloud Club Captain, the highest tier, I mentored 1000+ students through hands-on workshops and cloud certification drives.</p>
+            <div class="looking">
+              <p class="eyebrow">Currently looking for</p>
+              <p>Software, Cloud and Data Engineering roles where I can work on real products, keep getting better at problem-solving, and build reliable software.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skillsTitle">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="num">02</span> service catalog</p>
+          <h2 id="skillsTitle">Skills</h2>
+        </header>
+        <ul class="primary-skills reveal" aria-label="Main skills">
+          <li>Python</li><li>Java</li><li>SQL</li><li>DSA</li><li>AWS</li><li>Azure</li><li>Data Engineering</li><li>Generative AI</li>
+        </ul>
+        <div class="skill-grid">
+          <article class="skill-card reveal tilt-2"><h3>Languages</h3><p>Python, Java, C/C++, JavaScript, SQL, Kotlin</p></article>
+          <article class="skill-card reveal tilt-2"><h3>Cloud and DevOps</h3><p>AWS, Google Cloud, Microsoft Azure, DigitalOcean, Docker, CI/CD, Linux</p></article>
+          <article class="skill-card reveal tilt-2"><h3>Data</h3><p>Azure Databricks, PySpark, Delta Lake, Parquet, Data Pipelines, Power BI, Tableau</p></article>
+          <article class="skill-card reveal tilt-2"><h3>AI and ML</h3><p>RAG, LLMs, LlamaIndex, Ollama, Machine Learning, OpenCV, Time Series Forecasting</p></article>
+          <article class="skill-card reveal tilt-2"><h3>Backend</h3><p>Spring Boot, FastAPI, Node.js, Express.js, REST APIs</p></article>
+          <article class="skill-card reveal tilt-2"><h3>Frontend</h3><p>React.js, Next.js 14, Tailwind CSS, HTML, CSS</p></article>
+          <article class="skill-card reveal tilt-2"><h3>Databases</h3><p>PostgreSQL, MySQL, MongoDB, Redis, Firebase, Milvus</p></article>
+          <article class="skill-card reveal tilt-2"><h3>Engineering</h3><p>Git, System Design, Object-Oriented Design, Problem-Solving, Automation Workflows</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="num">03</span> deployments</p>
+          <h2 id="projectsTitle">Projects</h2>
+        </header>
+
+        <article class="feature reveal tilt-3">
+          <div class="feature-main">
+            <p class="deploy"><span class="light" aria-hidden="true"></span>deployed</p>
+            <h3>LeakSpot</h3>
+            <p class="feature-lead">A serverless system that helps cities find and fix hidden water leaks, so crews fix the worst leak first.</p>
+            <p>I built it solo on AWS for the WeMakeDevs × AWS Bharat Builds hackathon (Heat &amp; Water track). It brings together meter data, citizen photo reports checked by AI, and a fair priority score. A repair only counts as done when the meters prove the leak has stopped.</p>
+            <ul class="tags"><li>AWS Lambda</li><li>Amazon Bedrock</li><li>Amazon DynamoDB</li><li>AWS CDK</li><li>React</li><li>three.js</li></ul>
+            <div class="links">
+              <a href="https://d16l2tljxlr7ci.cloudfront.net" target="_blank" rel="noopener noreferrer">Live demo</a>
+              <a href="https://youtu.be/O-Mv5jXtpvg" target="_blank" rel="noopener noreferrer">Video</a>
+              <a href="https://builder.aws.com/content/3KXuwcHFfMrLzqK8r9HGcYmq1Pt/leakspot-finding-the-water-a-city-cant-see" target="_blank" rel="noopener noreferrer">Write-up</a>
+              <a href="https://github.com/THE-S0HAM/leakspot" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <ul class="feature-side">
+            <li><strong>Every 15 min</strong> each area's water in and water used is compared against its own 14-day pattern.</li>
+            <li><strong>No app, no login</strong> for citizen photo reports, checked by Amazon Bedrock in English, Hindi and Marathi.</li>
+            <li><strong>0 to 100</strong> explainable priority score for every leak.</li>
+            <li><strong>3 clean readings</strong> before a ticket closes. If the leak is still there, it reopens by itself.</li>
+          </ul>
+        </article>
+
+        <div class="card-grid">
+          <article class="card reveal tilt-3">
+            <p class="deploy"><span class="light" aria-hidden="true"></span>deployed</p>
+            <h3>OmniWhale-RAG</h3>
+            <p>An offline-first multimodal AI system that processes PDFs, images, charts and text in one vector space. It runs locally on Intel Lunar Lake, so data never leaves the machine.</p>
+            <ul class="tags"><li>FastAPI</li><li>Next.js 14</li><li>Ollama</li><li>Milvus</li><li>LlamaIndex</li></ul>
+            <div class="links">
+              <a href="https://omniwhale.sohamdeshmukh.me/" target="_blank" rel="noopener noreferrer">Live demo</a>
+              <a href="https://github.com/THE-S0HAM/OmniWhale-RAG" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+          <article class="card reveal tilt-3">
+            <p class="deploy award"><span class="light" aria-hidden="true"></span>2nd Prize, DIPEX 2026</p>
+            <h3>InfraSense</h3>
+            <p>A dual-layer structural health monitoring system that uses IoT sensors and AI to detect corrosion, vibration and structural movement before they become failures.</p>
+            <ul class="tags"><li>Amazon Bedrock</li><li>DynamoDB</li><li>Serverless</li><li>CI/CD</li><li>IoT</li></ul>
+          </article>
+          <article class="card reveal tilt-3">
+            <p class="deploy"><span class="light" aria-hidden="true"></span>deployed</p>
+            <h3>MindMate AI</h3>
+            <p>A serverless AI companion for mental health support, built with safety first: real-time crisis detection with KIRAN helpline routing, and 13 jailbreak pattern detectors.</p>
+            <ul class="tags"><li>Amazon Bedrock</li><li>Claude 3 Haiku</li><li>Lambda</li><li>Next.js 14</li></ul>
+            <div class="links">
+              <a href="https://mindmate.sohamdeshmukh.me/" target="_blank" rel="noopener noreferrer">Live demo</a>
+            </div>
+          </article>
+        </div>
+
+        <ul class="rows">
+          <li class="row reveal tilt-3">
+            <h3>TaskTitan ERP</h3>
+            <p>Secure ERP with Spring Security 6, JWT role-based access, and Redis caching.</p>
+            <a href="https://tasktitan.sohamdeshmukh.me/" target="_blank" rel="noopener noreferrer" aria-label="TaskTitan ERP live demo">Live demo</a>
+          </li>
+          <li class="row reveal tilt-3">
+            <h3>NurseView</h3>
+            <p>Medical document pipeline using Gemini Vision to turn scans into FHIR and HL7 formats.</p>
+            <a href="https://github.com/THE-S0HAM/NurseView" target="_blank" rel="noopener noreferrer" aria-label="NurseView on GitHub">GitHub</a>
+          </li>
+          <li class="row reveal tilt-3">
+            <h3>ProctorLock</h3>
+            <p>Anti-cheating exam platform with 35+ security features, including focus tracking and tab-switch detection.</p>
+            <a href="https://proctorlock.sohamdeshmukh.me/" target="_blank" rel="noopener noreferrer" aria-label="ProctorLock live demo">Live demo</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experienceTitle">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="num">04</span> changelog</p>
+          <h2 id="experienceTitle">Experience</h2>
+        </header>
+        <ol class="timeline">
+          <li class="reveal">
+            <p class="when">Jun 2026 to Aug 2026</p>
+            <div>
+              <h3>Celebal Excellence Intern, Data Engineering</h3>
+              <p class="where">Celebal Technologies, remote</p>
+              <p>Built and optimised data-processing workflows for analytics and validation with Python, SQL, Azure Databricks and PySpark, including Delta Lake MERGE operations and Parquet-based storage.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="when">Apr 2026 to Jun 2026</p>
+            <div>
+              <h3>AWS Student Builder Group Leader</h3>
+              <p class="where">Amazon Web Services, Kopargaon</p>
+              <p>Led the transition of the college cloud club into an official AWS Student Builder Group, and ran hands-on sessions on real-world cloud concepts.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="when">Feb 2025 to Apr 2026</p>
+            <div>
+              <h3>AWS Cloud Club Captain</h3>
+              <p class="where">Amazon Web Services, Kopargaon</p>
+              <p>Led the club, organised technical events and workshops, and mentored students through cloud projects. Reached Diamond Level, the highest captaincy tier.</p>
+            </div>
+          </li>
+        </ol>
+        <details class="more reveal">
+          <summary>Community roles</summary>
+          <ul>
+            <li><strong>Executive Member</strong>, Computer Society of India Student Chapter, Aug 2024 to Aug 2025</li>
+            <li><strong>Digital Administrator</strong>, AWS Cloud Club at Sanjivani College of Engineering, Apr 2024 to Feb 2025</li>
+            <li><strong>Design and Branding Head</strong>, GeeksforGeeks Sanjivani, Nov 2024 to Mar 2025</li>
+            <li><strong>Social Media Manager</strong>, GeeksforGeeks Sanjivani, Oct 2023 to Nov 2024</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="achievements" aria-labelledby="achievementsTitle">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="num">05</span> uptime record</p>
+          <h2 id="achievementsTitle">Achievements</h2>
+        </header>
+        <ul class="wins reveal">
+          <li><strong>2nd Prize</strong><span>DIPEX 2026 State-Level Exhibition, for InfraSense</span></li>
+          <li><strong>Diamond Level</strong><span>AWS Cloud Club Captain, the highest tier</span></li>
+          <li><strong>3x AWS</strong><span>Solutions Architect Associate, AI Practitioner, Cloud Practitioner</span></li>
+          <li><strong>SAP Certified</strong><span>Back-End Developer, ABAP Cloud</span></li>
+          <li><strong>5-Star SQL</strong><span>HackerRank</span></li>
+          <li><strong>3-Star</strong><span>CodeChef</span></li>
+          <li><strong>NPTEL Silver</strong><span>Top 5% in online courses, 4x certified</span></li>
+          <li><strong>1000+</strong><span>Students mentored through workshops and cloud drives</span></li>
+        </ul>
+        <details class="more reveal">
+          <summary>All certifications</summary>
+          <ul>
+            <li><strong>Internet of Things (IoT)</strong>, DADB India Academy, Oct 2026. <a href="assets/docs/iot-certificate.pdf" target="_blank" rel="noopener">Certificate</a></li>
+            <li><strong>SAP Certified, Back-End Developer, ABAP Cloud</strong>, SAP, Jul 2026</li>
+            <li><strong>AWS Certified Solutions Architect, Associate</strong>, May 2026. <a href="assets/docs/aws-saa-c03.pdf" target="_blank" rel="noopener">Certificate</a></li>
+            <li><strong>AWS Certified AI Practitioner</strong>, Nov 2025</li>
+            <li><strong>NPTEL Online Certification in E-Business</strong>, Nov 2025</li>
+            <li><strong>Google Cloud Data Analytics Certificate</strong>, Oct 2025</li>
+            <li><strong>AWS Certified Cloud Practitioner CLF-C02</strong>, Sep 2025</li>
+            <li><strong>AWS Educate Introduction to Generative AI</strong>, Jun 2025</li>
+            <li><strong>AWS Educate Machine Learning Foundations</strong>, Jun 2025</li>
+            <li><strong>Employment Communication, A Lab Based Course</strong>, NPTEL, Apr 2025</li>
+            <li><strong>Udacity Generative AI Nanodegree</strong></li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="writing" aria-labelledby="writingTitle">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="num">06</span> postmortems</p>
+          <h2 id="writingTitle">Writing</h2>
+        </header>
+        <ul class="posts reveal">
+          <li><a href="https://dev.to/thesoham/when-one-config-file-shook-the-edge-lessons-from-the-cloudflare-outage-c4b" target="_blank" rel="noopener noreferrer"><span class="post-title">When One Config File Shook the Edge: Lessons from the Cloudflare Outage</span><span class="post-meta">Dev.to, Nov 2025</span></a></li>
+          <li><a href="https://builder.aws.com/content/34QloXs9zELw0rsOJFVbw1btMCX/the-day-the-internet-froze-a-15-hour-wake-up-call" target="_blank" rel="noopener noreferrer"><span class="post-title">The Day the Internet Froze: A 15-Hour Wake-Up Call</span><span class="post-meta">AWS Builder, Oct 2025</span></a></li>
+          <li><a href="https://builder.aws.com/content/33heJrJ7Uz13r9nE5mW79rRkrVL/3-life-hacks-i-wish-i-knew-before-becoming-an-aws-cloud-club-captain" target="_blank" rel="noopener noreferrer"><span class="post-title">3 Life Hacks I Wish I Knew Before Becoming an AWS Cloud Club Captain</span><span class="post-meta">AWS Builder, Oct 2025</span></a></li>
+          <li><a href="https://medium.com/@soham-deshmukh/byteblitz-arcade-building-my-neon-playground-with-amazon-q-cli-4ea0ae05aed4" target="_blank" rel="noopener noreferrer"><span class="post-title">ByteBlitz Arcade: Building My Neon Playground with Amazon Q CLI</span><span class="post-meta">Medium, Jun 2025</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="num">07</span> page me</p>
+          <h2 id="contactTitle">Contact</h2>
+        </header>
+        <p class="contact-lead reveal">Building something that has to stay up? Let's talk.</p>
+        <a class="btn btn-primary btn-big reveal" href="mailto:sohamdeshmukh2324_it@sanjivanicoe.org.in"><span>Email me</span></a>
+        <ul class="socials reveal">
+          <li><a href="https://www.linkedin.com/in/soham--deshmukh" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/THE-S0HAM" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://builder.aws.com/community/@s0ham" target="_blank" rel="noopener noreferrer">AWS Builder</a></li>
+          <li><a href="https://www.credly.com/users/soham--deshmukh/badges" target="_blank" rel="noopener noreferrer">Credly</a></li>
+          <li><a href="https://leetcode.com/u/_soham/" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
+          <li><a href="https://dev.to/thesoham" target="_blank" rel="noopener noreferrer">Dev.to</a></li>
+          <li><a href="https://medium.com/@soham-deshmukh" target="_blank" rel="noopener noreferrer">Medium</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Built by Soham Deshmukh with plain HTML, CSS and JavaScript. Hosted on AWS Amplify.</p>
+      <a href="https://github.com/THE-S0HAM/portfolio" target="_blank" rel="noopener noreferrer">View the source</a>
+    </div>
+  </footer>
+
+  <!-- Chaos Test: on-call console -->
+  <aside class="console" id="console" role="dialog" aria-labelledby="consoleTitle" hidden>
+    <div class="console-top">
+      <p class="console-id" id="consoleId">ON CALL</p>
+      <p class="console-timer" id="timer" aria-label="Time on incident">00:00</p>
+      <button class="icon-btn" id="soundBtn" type="button" aria-pressed="false">Sound off</button>
+      <button class="icon-btn" id="minimiseBtn" type="button">Minimise</button>
+    </div>
+    <svg class="map" viewBox="0 0 400 74" role="img" aria-label="System map: visitors, edge, region and data" id="map">
+      <path class="pipe" data-pipe="1" d="M56 30H144"/>
+      <path class="pipe" data-pipe="2" d="M156 30H244"/>
+      <path class="pipe" data-pipe="3" d="M256 30H344"/>
+      <g class="node ok" transform="translate(50 30)"><circle r="11"/><text y="32">Visitors</text></g>
+      <g class="node" data-node="1" transform="translate(150 30)"><circle r="11"/><text y="32">Edge</text></g>
+      <g class="node" data-node="2" transform="translate(250 30)"><circle r="11"/><text y="32">Region</text></g>
+      <g class="node" data-node="3" transform="translate(350 30)"><circle r="11"/><text y="32">Data</text></g>
+    </svg>
+    <div class="console-body" id="consoleBody"></div>
+    <div class="console-foot">
+      <button class="skip-btn" id="skipBtn" type="button">Skip and restore site</button>
+      <p>Simulated incident. No real servers were harmed.</p>
+    </div>
+  </aside>
+
+  <button class="pager-chip" id="pagerChip" type="button" hidden><span class="status-dot" aria-hidden="true"></span><span id="pagerChipText">Resume on-call</span></button>
+
+  <div class="postmortem-wrap" id="postmortem" hidden>
+    <section class="postmortem" role="dialog" aria-labelledby="pmTitle">
+      <p class="eyebrow">Postmortem <span aria-hidden="true">/</span> simulated</p>
+      <h2 id="pmTitle" tabindex="-1">All systems operational</h2>
+      <dl class="pm-stats">
+        <div><dt>Time to recovery</dt><dd id="pmTime">00:00</dd></div>
+        <div><dt>Rank</dt><dd id="pmRank">SRE</dd></div>
+        <div><dt>Wrong calls</dt><dd id="pmWrong">0</dd></div>
+      </dl>
+      <div class="pm-cause">
+        <p class="eyebrow">Root cause</p>
+        <p class="pm-fact">When nothing's on fire, I'm at a chessboard or looking at the night sky.</p>
+      </div>
+      <div class="pm-actions">
+        <button class="btn btn-primary" id="keepNight" type="button"><span>Keep Night Shift</span></button>
+        <button class="btn" id="backDay" type="button"><span>Back to Day</span></button>
+        <button class="btn" id="copyResult" type="button"><span>Copy my result</span></button>
+      </div>
+      <p class="pm-note">Simulated incident. No real servers were harmed.</p>
+    </section>
+  </div>
+
+  <p class="sr-only" id="live" aria-live="polite"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
